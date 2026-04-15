@@ -5,6 +5,11 @@ Reverse engineering of the AULA F108 Pro keyboard and its rebranded clones (AJAZ
 
 ![Alt text](AULA%20F108%20Pro.png)
 
+A short video with the very first changes made:
+- Custom Boot Animation
+- Background image in main page
+- Overall UI changes
+
 https://github.com/user-attachments/assets/38bfbaa7-44a3-4dab-967b-7df98db345ee
 
 ---
