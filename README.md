@@ -1,8 +1,11 @@
+
 # AULA F108 Pro — Reverse Engineering
 
 Reverse engineering of the AULA F108 Pro keyboard and its rebranded clones (AJAZZ, Epomaker, and possibly others).
 
 ![Alt text](AULA%20F108%20Pro.png)
+
+https://github.com/user-attachments/assets/38bfbaa7-44a3-4dab-967b-7df98db345ee
 
 ---
 
