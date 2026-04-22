@@ -63,7 +63,7 @@ Each file is named `NNNN_XXXXXXX.png` where:
 
 Copy the PNG you want to modify from `export/` folder to a new folder named `patch/` and edit them with any image editor. Keep the original filenames because the offset encoded in the name is used to locate the image in the binary.
 
-> **Important:** images must be saved at the exact same resolution as the original. The format is raw RGB565 Little Endian, so avoid adding transparency or changing color depth.
+> **Important:** images must be saved at the exact same resolution as the original. The format is raw RGB565 Little Endian (the repacker will do the conversion), so avoid adding transparency or changing color depth.
 
 ### 3. Repack the patched images into the binary
 
