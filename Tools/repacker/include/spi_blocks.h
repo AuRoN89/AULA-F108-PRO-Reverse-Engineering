@@ -1,0 +1,88 @@
+/******************************************************************************
+ *  Aula F108 Pro Repacker
+ *
+ *  Copyright (c) 2026 Au{R}oN
+ *
+ *  Licensed under the Creative Commons Attribution 4.0 International License
+ *  (CC BY 4.0).
+ *
+ *  You are free to:
+ *  - Share: copy and redistribute the material in any medium or format
+ *  - Adapt: remix, transform, and build upon the material for any purpose,
+ *           even commercially
+ *
+ *  Under the following terms:
+ *  - Attribution: You must give appropriate credit, provide a link to the
+ *    license, and indicate if changes were made.
+ *
+ *  Full license text available at:
+ *  https://creativecommons.org/licenses/by/4.0/
+ *
+ *  Description:
+ *  SPI repacking tool for Aula F108 Pro keyboard.
+ *
+ *  Author: Au{R}oN
+ *  Year:   2026
+ *
+ ******************************************************************************/
+
+#pragma once
+
+#include <vector>
+#include <tuple>
+#include <string>
+#include <cstdint>
+
+// BLOCKS: (offset, num_img, label, width, height)
+inline std::vector<std::tuple<uint32_t, int, std::string, int, int>> BLOCKS = {
+    {0x0000000,  1, "Test Screen ??",                       240, 135},
+    {0x001F9E4,  8, "Keyboard Status",                       29,  28},
+    {0x0011AA8,  1, "Conn Type BT1",                         94,  28},
+    {0x0012F38,  1, "Conn Type BT2",                         94,  28},
+    {0x00143C8,  1, "Conn Type BT3",                         94,  28},
+    {0x0015858,  1, "Conn Type ???",                         94,  28},
+    {0x0016CE8,  1, "Conn Type Wi-Fi",                       94,  28},
+    {0x0018178,  1, "Conn Type Wi-Fi",                       94,  28},
+    {0x0019608,  1, "Conn Type Wi-Fi",                       94,  28},
+    {0x001BF28,  1, "Conn Type USB",                         94,  28},
+    {0x001D3B8,  1, "Conn Type USB",                         94,  28},
+    {0x000FD20,  6, "Battery Status",                        35,  18},
+    {0x001F4F8,  1, "Battery Recharge",                      35,  18},
+    {0x0022C9E,  6, "Brightness",                           240, 135},
+    {0x00DFE52,  1, "Cursor 1",                             240,  15},
+    {0x0081B5E,  6, "Speed",                                240, 135},
+    {0x00E0AA0,  5, "Effects Number (Korean)",              240, 135},
+    {0x00DFE52,  1, "Cursor 2",                             240,  15},
+    {0x012FC88,  1, "Color",                                240, 135},
+    {0x013F9A8,  1, "BT Success",                           240, 135},
+    {0x014F6C8,  1, "Connection Type Selector",             240, 135},
+    {0x015E7DA,  1, "Cursor 3",                             240,  15},
+    {0x015F428,  1, "Error",                                240, 135},
+    {0x0170D68,  1, "BT Linking",                           240, 135},
+    {0x017EE68,  3, "BT Linking Animation",                 240,  88},
+    {0x019DD6A,  1, "WiFi Linking",                         240, 135},
+    {0x01ADA8A,  3, "WiFi Linking Animation",               240,  88},
+    {0x01CC9F6,  1, "Cursor 4",                             240,   3},
+    {0x01CD4CA,  4, "Main Menu Frames (Korean)",            240, 135},
+    {0x020BE0A,  1, "OS Type Selector (Korean)",            240, 135},
+    {0x021C4D0,  1, "Volume Page (Korean)",                 240, 135},
+    {0x022B88E,  1, "Language (Korean)",                    240, 135},
+    {0x023B478,  1, "Brightness / Speed Texts (Korean)",     99,  66},
+    {0x023DFC8,  1, "Brightness / Speed Texts (English)",    99,  66},
+    {0x0240C4E,  5, "Effect (English)",                     240, 135},
+    {0x028FDEE,  1, "Colors (English)",                     240, 135},
+    {0x029FB0E,  1, "Conn Type (English)",                  240, 135},
+    {0x02AF82E,  4, "Config Menu (English)",                240, 135},
+    {0x02EECAE,  1, "OS Type Selector (English)",           240, 135},
+    {0x02FE9CE,  1, "Volume Page (English)",                240, 135},
+    {0x030E6EE,  1, "Language (English)",                   240, 135},
+    {0x032066E,  2, "Volume Icons (Unused ??)",              64,  64},
+    {0x0324D98,  1, "Volume + Animation Icon",               49,  49},
+    {0x0325EE0,  1, "Volume - Animation Icon",               35,  35},
+    {0x0326660, 16, "Connection Texts",                     240,  16},
+    {0x034845C,  1, "Connection Texts",                     240,  70},
+    {0x03541BC,  3, "Connection Texts",                     240,  16},
+    {0x035AD5E, 11, "Numbers",                               20,  28},
+    {0x03903BE, 64, "Boot Animation",                       240, 135},
+    {0x07BFB42, 93, "Custom Animation",                     240, 135},
+};

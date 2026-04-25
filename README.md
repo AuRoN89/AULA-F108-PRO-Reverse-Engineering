@@ -74,3 +74,7 @@ repack.exe <spi_flash.bin>
 Reads all PNG files from the `patch/` folder, converts them back to RGB565 LE, and writes a new file named `<spi_flash>_patched.bin` alongside the original. Only images that differ from the original are written.
 
 Files in `patch/` that don't match a known offset in the block table are ignored.
+
+### 4. Flash repacked SPI .bin file
+
+Execute flasher.exe click on `Load Bin` and choose the modified `<spi_flash>_patched.bin` file. Click on Scan and be sure that the identified device is your `AULA F108 Pro Keyboard`, then click on `Flash Bin`. The whole procedure will take arounds ~5 minutes. Once finished your keyboard will automatically reboot and the new UI should be visible on the LCD screen.

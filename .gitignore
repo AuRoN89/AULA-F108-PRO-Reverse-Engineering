@@ -1,4 +1,3 @@
 .vscode/
-Tools/src/build/
-Tools/src/CMakeCache.txt
-Tools/src/CMakeFiles/
+build/
+Files/Firmware/
